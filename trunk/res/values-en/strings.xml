@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_item_about">About</string>
+    <string name="app_name">Flashlight</string>
+    <string name="dialog_about_title">About</string>
+    <string name="dialog_about_ok">OK</string>
+    <string name="text_about">Flashlight is a simple program intended to turn an android phone into a flashlight</string>
+    <string name="text_home_page">Home Page:</string>
+    <string name="text_icon_by">Flashlight Icon by</string>
+    <string name="value_home_page">http://code.google.com/p/android-flashlight/</string>
+    <string name="value_icon_home_page">http://www.fasticon.com</string>
+</resources>

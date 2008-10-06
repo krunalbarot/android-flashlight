@@ -26,7 +26,7 @@ public class FlashlightActivity extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(final Menu menu) {
 		super.onCreateOptionsMenu(menu);
-		menu.add(MENU_ABOUT_GROUP, MENU_ABOUT_ID, MENU_ABOUT_ORDER, "About");
+		menu.add(MENU_ABOUT_GROUP, MENU_ABOUT_ID, MENU_ABOUT_ORDER, R.string.menu_item_about);
 		return true;
 	}
 
@@ -34,10 +34,16 @@ public class FlashlightActivity extends Activity {
 	public boolean onOptionsItemSelected(final MenuItem item) {
 		switch (item.getItemId()) {
 		default:
+			StringBuilder sb = new StringBuilder();
+			sb.append(getString(R.string.text_about)).append("\n\n");
+			sb.append(getString(R.string.text_home_page)).append(" ");
+			sb.append(getString(R.string.value_home_page)).append("\n");
+			sb.append(getString(R.string.text_icon_by)).append(" ");
+			sb.append(getString(R.string.value_icon_home_page));
+
 			AlertDialog dialog = new AlertDialog.Builder(this).setIcon(R.drawable.icon).setTitle(
-					"About").setMessage(
-					"Flashlight is a simple program intended to turn an android phone into a flashlight \n\nHome Page: http://code.google.com/p/android-flashlight/ \nFlashlight Icon by http://www.fasticon.com")
-					.setPositiveButton("OK", null).create();
+					getString(R.string.dialog_about_title)).setMessage(sb.toString())
+					.setPositiveButton(getString(R.string.dialog_about_ok), null).create();
 			dialog.show();
 		}
 		return super.onOptionsItemSelected(item);
