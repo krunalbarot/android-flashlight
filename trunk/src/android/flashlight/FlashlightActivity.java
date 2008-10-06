@@ -38,8 +38,6 @@ public class FlashlightActivity extends Activity {
 			sb.append(getString(R.string.text_about)).append("\n\n");
 			sb.append(getString(R.string.text_home_page)).append(" ");
 			sb.append(getString(R.string.value_home_page)).append("\n");
-			sb.append(getString(R.string.text_icon_by)).append(" ");
-			sb.append(getString(R.string.value_icon_home_page));
 
 			AlertDialog dialog = new AlertDialog.Builder(this).setIcon(R.drawable.icon).setTitle(
 					getString(R.string.dialog_about_title)).setMessage(sb.toString())
